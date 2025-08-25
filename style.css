@@ -67,9 +67,9 @@ nav ul li .different {
 #star.scrolled {
   opacity: 1;
   position: absolute;
-  margin-top: 15px;
+  margin-top: 13px;
   color: aliceblue;
-  font-size: 15px; 
+  font-size: 17px; 
 }
 
 #herosection {
@@ -186,7 +186,7 @@ h1, h2, .resume div, h3, .button {
   margin-bottom: 30px;
 }
 
-.desc, .section2, .section2 .block, .resume, .projects, footer div, .container {
+.desc, .section2, .section2 .block, .resume, .projects, footer div, .container, .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,6 +358,7 @@ h1, h2, .resume div, h3, .button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 80px 0 80px 0;
 }
 
 .project .title { 

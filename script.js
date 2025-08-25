@@ -30,6 +30,6 @@ const observer = new IntersectionObserver((entries) => {
             star.style.left = starLeft + "px";
         }
     });
-}, {threshold: 0.35});
+}, {threshold: 0.2});
 
 sections.forEach(section => observer.observe(section));
