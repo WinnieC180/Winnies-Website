@@ -361,6 +361,13 @@ h1, h2, .resume div, h3, .button {
   padding: 80px 0 80px 0;
 }
 
+.project .organizer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .project .title { 
   display: flex;
   justify-content: center;
@@ -387,6 +394,32 @@ h1, h2, .resume div, h3, .button {
   font-size: 22.5px;
   color: #314B6E;
   padding: 10px 135px 10px 135px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+} 
+
+.images {
+  position: relative;
+}
+
+.images img {
+  width: 511px;
+  height: 845px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 60px;
+  font-size: 20px;
+  border: 3px inset #192C44;
+  background-color: #D9D9D9;
 }
 
 .container {
