@@ -33,3 +33,32 @@ const observer = new IntersectionObserver((entries) => {
 }, {threshold: 0.2});
 
 sections.forEach(section => observer.observe(section));
+
+// const carousels = document.querySelectorAll('.carousel');
+// *decided to use the carousel container for styling and slide for the semantics*
+const slides = document.querySelectorAll('.slide');
+
+slides.forEach(slide => {
+  const track = slide.querySelector('.images');
+  const images = Array.from(track.children);
+  const next = slide.querySelector('.toggle.right');
+  const prev = slide.querySelector('.toggle.left');
+
+  let currIndex = 0;
+
+  function updateCarousel() {
+    const offset = -currIndex * 511; 
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  next.addEventListener('click', () => {
+    currIndex = (currIndex + 1) % images.length;
+    updateCarousel(); 
+  });
+
+  prev.addEventListener('click', () => {
+    currIndex = (currIndex - 1 + images.length) % images.length; 
+    updateCarousel(); 
+  });
+});
+

@@ -12,14 +12,18 @@
     <nav>
         <div class="navbar" id="herosection">
             <div class="logo"><a href="#"><span style="font-size: 35px; color: #314B6E;">✦</span> Winnie</a></div>
-            <ul>
-                <li><a href="#about" class="link">About</a></li>
-                <li><a href="#experience" class="link">Experience</a></li>
-                <li><a href="#resume" class="link different">Resume</a></li>
-                <li><a href="#projects" class="link different">Projects</a></li>
-                <li><a href="#contact" class="link different">Contact</a></li>
-                <span class="star" id="star">ᯓ★</span>
-            </ul>
+            <div class="tabs">
+                <label for="toggle" class="burger">&#9776</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <li><a href="#about" class="link">About</a></li>
+                    <li><a href="#experience" class="link">Experience</a></li>
+                    <li><a href="#resume" class="link different">Resume</a></li>
+                    <li><a href="#projects" class="link different">Projects</a></li>
+                    <li><a href="#contact" class="link different">Contact</a></li>
+                    <span class="star" id="star">ᯓ★</span>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -60,7 +64,7 @@
         </div>
 
         <div class="section3">
-            <span class="vertical"></span>
+            <!-- <span class="vertical"></span> -->
             <h1>EDUCATION</h1>
             <div class="underline"></div>
 
@@ -130,93 +134,91 @@
         <h1>PROJECTS</h1>
         <div class="underline"></div>
         
-        <div class="project">
-            <div class="organizer">
+        <div class="project" style="gap: 40px;">
+            <div class="slide">
+                <button class="toggle left">⮜</button> 
                 <div class="carousel">
                     <div class="images">
                         <img src="images/SUSB1.png" alt="">
                         <img src="images/SUSB2.png" alt="">
                         <img src="images/SUSB3.png" alt="">
                     </div>
-                    <button class="toggle left">&#10094;</button>  <!-- Note to self: Couldn't use < so had to use the unicode-->
-                    <button class="toggle right">&#10095;</button>
                 </div>
+                <button class="toggle right">⮞</button>
+            </div>
 
-                <div>
-                    <div class="title">
-                        <img src="images/SUSB.png" alt="The logo for Sustainabytes, an developing organization at Cornell"
-                        style="width: 80px; height: 80px; margin-right: 20px;">
-                        <h3 style="margin-right: 30px;">SUSTAINABYTES</h3>
-                    </div>
-                    <p>Co-developed the website for Sustainabytes, a soon to be organization at Cornell that explores the 
-                        intersection of technology and sustainability. The site highlights events, ongoing projects, and 
-                        resources to help students. Working with the WebDev team and our social chair, I helped bring the 
-                        vision to life by creating a clean, accessible layout and experimenting with interactive features 
-                        to make the site more engaging.
-                    </p>
-                    <div class="status"><strong>Status:</strong> In progress</div>
-                    <div class="container">
-                        <div class="button" style="border-radius: 20px; background-color: #93C4A6;">VISIT</div>
-                    </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="title">
+                    <img src="images/SUSB.png" alt="The logo for Sustainabytes, an developing organization at Cornell"
+                    style="width: 80px; height: 80px; margin-right: 20px;">
+                    <h3 style="margin-right: 30px;">SUSTAINABYTES</h3>
+                </div>
+                <p>Co-developed the website for Sustainabytes, a soon to be organization at Cornell that explores the 
+                    intersection of technology and sustainability. The site highlights events, ongoing projects, and 
+                    resources to help students. Working with the WebDev team and our social chair, I helped bring the 
+                    vision to life by creating a clean, accessible layout and experimenting with interactive features 
+                    to make the site more engaging.
+                </p>
+                <div class="status"><strong>Status:</strong> In progress</div>
+                <div class="container">
+                    <div class="button" style="border-radius: 20px; background-color: #93C4A6;">VISIT</div>
                 </div>
             </div>
         </div>
 
         <div class="project">
-            <div class="organizer">
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <div class="title">
-                        <img src="images/Tile.png" alt="A rounded dark blue square"
-                        style="width: 45px; height: 45px; margin-right: 20px;">
-                        <h3 style="margin-right: 30px;">TILE SHUFFLE</h3>
-                    </div>
-                    <p style="font-size: 25px;">This game started as my senior year high school final project, and I recently revisited it 
-                        to fix a bug that had stumped me back then. Inspired by the classic sliding tile toy you 
-                        often find in goodie bags, I created a digital version where the goal is to move tiles one 
-                        at a time into the empty space until they’re all arranged in numerical order.
-                    </p>
-                    <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
-                    <div class="container">
-                        <div class="button" style="border-radius: 20px; background-color: #192C44;color: #D9D9D9;">VISIT</div>
-                    </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="title">
+                    <img src="images/Tile.png" alt="A rounded dark blue square"
+                    style="width: 45px; height: 45px; margin-right: 20px;">
+                    <h3 style="margin-right: 30px;">TILE SHUFFLE</h3>
                 </div>
-
-                <img src="images/tileShuffle.png" alt="A screenshot of my game tile shuffle" style="width: 734px; height: 463px; margin-top: 100px;">
+                <p style="font-size: 25px;">This game started as my senior year high school final project, and I recently revisited it 
+                    to fix a bug that had stumped me back then. Inspired by the classic sliding tile toy you 
+                    often find in goodie bags, I created a digital version where the goal is to move tiles one 
+                    at a time into the empty space until they’re all arranged in numerical order.
+                </p>
+                <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
+                <div class="container">
+                    <div class="button" style="border-radius: 20px; background-color: #192C44;color: #D9D9D9;">VISIT</div>
+                </div>
             </div>
+
+            <img src="images/tileShuffle.png" alt="A screenshot of my game tile shuffle" style="width: 734px; height: 463px; margin-top: 150px;">
         </div>
 
-        <div class="project">
-            <div class="organizer">
+        <div class="project">       
+            <div class="slide">
+                <button class="toggle left" style="float: left;">⮜</button> 
                 <div class="carousel">
                     <div class="images">
                         <img src="images/Qu-wack a goose.png" alt="The home screen of my game Qu-wack a goose.png" style="width: 512px; height: 765px;">
                         <img src="images/Qu-wack a goose 2.png" alt="" style="width: 512px; height: 765px;">
                         <img src="images/Qu-wack a goose 3.png" alt="" style="width: 512px; height: 765px;">
                         <img src="images/Qu-wack a goose 4.png" alt="" style="width: 512px; height: 765px;">
-                    </div>
-                    <button class="toggle left">&#10094;</button>  
-                    <button class="toggle right">&#10095;</button>
+                    </div> 
                 </div>
+                <button class="toggle right" style="float: right;">⮞</button>
+            </div>
 
-                <div>
-                    <div class="title">
-                        <img src="images/hammer.png" alt="The hammer for my game QU-WACK A MOLE"
-                        style="width: 73px; height: 84px; margin-right: 20px;">
-                        <h3 style="margin-right: 30px;">QU-WACK A MOLE</h3>
-                    </div>
-                    <p style="font-size: 25px;">The classic whack a mole game, but with geese! Along with... people? A game created 
-                        in a team of two where I designed the art and co-developed the game, we included pictures of our classmates 
-                        to create the people feature. 
-                        <br>
-                        <br>
-                        Finished second in the best game created. 
-                    </p>
-                    <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
-                    <div class="container">
-                        <div class="button" style="border-radius: 20px; background-color: #FFF2C1; flex-direction: row;">
-                            <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
-                            VISIT</div>
-                    </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="title">
+                    <img src="images/hammer.png" alt="The hammer for my game QU-WACK A MOLE"
+                    style="width: 73px; height: 84px; margin-right: 20px;">
+                    <h3 style="margin-right: 30px;">QU-WACK A MOLE</h3>
+                </div>
+                <p style="font-size: 25px;">The classic whack a mole game, but with geese! Along with... people? A game created 
+                    in a team of two where I designed the art and co-developed the game, we included pictures of our classmates 
+                    to create the people feature. 
+                    <br>
+                    <br>
+                    Finished second in the best game created in class. 
+                </p>
+                <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
+                <div class="container">
+                    <div class="button" style="border-radius: 20px; background-color: #FFF2C1; flex-direction: row;">
+                        <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
+                        VISIT</div>
                 </div>
             </div>
         </div>
@@ -232,7 +234,12 @@
         <div class="divider">
             <h1>SEND ME A MESSAGE</h1>
             <p>Have a question, proposal, or just want to say hello? Go ahead!</p>
-            <div class="envelope"></div>
+            <div class="envelope">
+                <h2>Name</h2>
+                <input type="text" style="border: none; border-bottom: 3px solid #0E141C; background-color: #D9D9D9;">
+                <h2>Email</h2>
+                <input type="text" style="border: none; border-bottom: 3px solid #0E141C; background-color: #D9D9D9;">
+            </div>
         </div>
         <div class="block">
             <h1>SAY HELLO</h1>
