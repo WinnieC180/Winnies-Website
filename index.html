@@ -12,9 +12,8 @@
     <nav>
         <div class="navbar" id="herosection">
             <div class="logo"><a href="#"><span style="font-size: 35px; color: #314B6E;">✦</span> Winnie</a></div>
+            
             <div class="tabs">
-                <label for="toggle" class="burger">&#9776</label>
-                <input type="checkbox" id="toggle">
                 <ul>
                     <li><a href="#about" class="link">About</a></li>
                     <li><a href="#experience" class="link">Experience</a></li>
@@ -44,7 +43,7 @@
             <div class="back" style="background-color: #607EA2; margin-bottom: -40px; left: 150px;"></div>
             <div class="back" style="background-color: #314B6E; margin-bottom: 40px; left: 200px;"></div>
             <img src="images/me.jpg" alt="An recent picture of me">
-            <div class="desc" style="margin-left: 110px; width: 700px;">
+            <div class="desc">
                 <h1>ABOUT ME</h1>
                 <div class="underline"></div>
                 <p>Hello! My name is Winnie and I’m a second-year computer science student with an interest in 
@@ -57,9 +56,15 @@
         <div class="section2">
             <h1>OTHER INTERESTS</h1>
             <div class="block">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
+                <div class="one">
+                    <img src="images/Crochet.png" alt="A ball of yarn with a crochet hook in it and the word crochet around it.">
+                </div>
+                <div class="two">
+                    <img src="images/Doodle.png" alt="An iPad & and apple pen with the word doodle around it.">
+                </div>
+                <div class="three">
+                    <img src="images/Sleep.png" alt="A crescent moon with the word sleep around it.">
+                </div>
             </div>
         </div>
 
@@ -133,6 +138,44 @@
     <div class="projects tab" id="projects">
         <h1>PROJECTS</h1>
         <div class="underline"></div>
+
+        <div class="project wide" style="display: flex; flex-direction: column;">  
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div style="background-color: rgb(209, 168, 64); width: 50px; height: 50px; margin-right: 20px; border-radius: 50px;"></div>   
+                <div class="title">
+                    <h3>CASHFLOW</h3>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <button class="toggle left" style="float: left;">⮜</button> 
+                <div class="carousel">
+                    <div class="images">
+                        <img src="images/Cashflow1.png" alt="" style="width: 1400px; height: 680px;">
+                        <img src="images/Cashflow2.png" alt="" style="width: 1400px; height: 680px;">
+                        <img src="images/Cashflow3.png" alt="" style="width: 1400px; height: 680px;">
+                        <img src="images/Cashflow4.png" alt="" style="width: 1400px; height: 680px;">
+                    </div> 
+                </div>
+                <button class="toggle right" style="float: right;">⮞</button>
+            </div>
+
+            <p style="font-size: 25px;">Ever need a place to keep track of your finances? Welcome to CashFlow! Each user can 
+                log in and access a personalized finance tracker tailored just for them. The app includes a pie chart 
+                that summarizes purchases, along with a built-in cryptocurrency converter that provides real-time exchange 
+                rates for anyone considering investing.
+                <br>
+                <br>
+                A full-stack web application built with TypeScript, using React with Vite for the frontend and Express for 
+                the backend, styled with CSS. <strong>Made for Trends in Web Development course</strong>
+            </p>
+            <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
+            <div class="container">
+                <div class="button" style="border-radius: 20px; background-color: #cee5c5; flex-direction: row;">
+                    <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
+                    <a href="https://github.com/clin0595/Final-Project" target="_blank" style="color: #0E141C;">VISIT</a></div>
+            </div>
+        </div>
         
         <div class="project" style="gap: 40px;">
             <div class="slide">
@@ -161,7 +204,9 @@
                 </p>
                 <div class="status"><strong>Status:</strong> In progress</div>
                 <div class="container">
-                    <div class="button" style="border-radius: 20px; background-color: #93C4A6;">VISIT</div>
+                    <div class="button" style="border-radius: 20px; background-color: #93C4A6; flex-direction: row;">
+                    <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
+                    <a href="https://github.com/Sustainabytes/internal-website" target="_blank" style="color: #0E141C;">VISIT</a></div>
                 </div>
             </div>
         </div>
@@ -180,7 +225,8 @@
                 </p>
                 <div class="status"><strong>Status:</strong> Finished | Open to suggestions</div>
                 <div class="container">
-                    <div class="button" style="border-radius: 20px; background-color: #192C44;color: #D9D9D9;">VISIT</div>
+                    <div class="button" style="border-radius: 20px; background-color: #192C44;color: #D9D9D9;">
+                        <a href="https://winniec180.github.io/TileShuffle/" target="_blank" style="color: #D9D9D9;">VISIT</a></div>
                 </div>
             </div>
 
@@ -218,7 +264,7 @@
                 <div class="container">
                     <div class="button" style="border-radius: 20px; background-color: #FFF2C1; flex-direction: row;">
                         <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
-                        VISIT</div>
+                        <a href="https://github.com/WinnieC180/Quu-wack-a-goose" target="_blank" style="color: #0E141C;">VISIT</a></div>
                 </div>
             </div>
         </div>
@@ -226,7 +272,9 @@
 
     <div class="resume">
         <h1>CHECK OUT MY GITHUB</h1>
-        <div class="button"><a href="https://github.com/WinnieC180" target="_blank" style="color: #0E141C;">GITHUB</a></div>
+        <div class="button" style="flex-direction: row; width: 230px;">
+            <img src="/images/github.png" alt="The Github icon" style="height: 43px; width: 43px; margin-right: 10px;">
+            <a href="https://github.com/WinnieC180" target="_blank" style="color: #0E141C;">GITHUB</a></div>
     </div>
     <div class="blueblock"></div>
 
@@ -235,16 +283,15 @@
             <h1>SEND ME A MESSAGE</h1>
             <p>Have a question, proposal, or just want to say hello? Go ahead!</p>
             <div class="envelope">
-                <h2>Name</h2>
-                <input type="text" style="border: none; border-bottom: 3px solid #0E141C; background-color: #D9D9D9;">
-                <h2>Email</h2>
-                <input type="text" style="border: none; border-bottom: 3px solid #0E141C; background-color: #D9D9D9;">
+                <img src="/images/package_car.svg" alt="" style="height: 150px; width: 150px; margin-right: 10px;">
+                <div class="button" style="flex-direction: row; width: 230px;">
+                <a href="mailto:winnie.chan5460@gmail.com" target="_blank" style="color: #0E141C;">SEND</a></div>
             </div>
         </div>
         <div class="block">
             <h1>SAY HELLO</h1>
             <p style="color: #192C44;">winnie.chan5460@gmail.com</p>
-            <p style="width: 450px;">Designed in Figma and coded in Visual Studio Code by yours truly. Depolyed with GitHub Pages.
+            <p style="width: 450px;">Designed in Figma and coded in Visual Studio Code by yours truly. Deployed with GitHub Pages.
                 <br>
                 <br>
                 © Winnie Chan 2025</p>

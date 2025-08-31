@@ -41,13 +41,14 @@ const slides = document.querySelectorAll('.slide');
 slides.forEach(slide => {
   const track = slide.querySelector('.images');
   const images = Array.from(track.children);
+  const width = images[0].clientWidth;
   const next = slide.querySelector('.toggle.right');
   const prev = slide.querySelector('.toggle.left');
 
   let currIndex = 0;
 
   function updateCarousel() {
-    const offset = -currIndex * 511; 
+    const offset = -currIndex * width; 
     track.style.transform = `translateX(${offset}px)`;
   }
 

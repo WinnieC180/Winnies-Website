@@ -43,7 +43,7 @@ nav {
 
 nav ul { 
   display: flex;
-  gap: 100px;
+  gap: 6vw;
 }
 
 nav ul li {
@@ -56,17 +56,6 @@ nav ul li a {
 
 nav ul li .different {
   color: #0E141C;
-}
-
-/* Hamburger menu */
-.burger {
-  display: none;
-  padding: 20px 120px 10px 70px;
-  float: right;
-}
-
-#toggle {
-  display: none; 
 }
 
 .star {
@@ -84,13 +73,13 @@ nav ul li .different {
 }
 
 #herosection {
-  padding: 25px 120px 10px 70px;
+  padding: 25px 110px 10px 70px;
   transition: background-color 0.8s ease-in-out;
   transition: padding 0.8s ease;
 }
 
 #herosection.scrolled {
-  padding: 2px 120px 0 70px;
+  padding: 2px 110px 0 70px;
   background-color: #0E141C;
   height: 63px;
 }
@@ -116,7 +105,7 @@ h1, h2, .resume div, h3, .button {
   position: absolute;
   background-color: #0E141C;
   height: 760px;
-  width: calc(100vw - 650px);
+  width: calc(100vw - 38vw);
   left: 0;
   top: 0;
   z-index: -1;
@@ -139,7 +128,7 @@ h1, h2, .resume div, h3, .button {
   position: absolute;
   background-color: #314B6E;
   height: 760px;
-  width: 650px;
+  width: 38vw;
   right: 0;
   top: 0;
   z-index: -1;
@@ -196,7 +185,7 @@ h1, h2, .resume div, h3, .button {
   margin-bottom: 30px;
 }
 
-.desc, .section2, .section2 .block, .resume, .projects, footer div, .container, .button {
+.desc, .section2, .section2 .block, .section2 .block div, .resume, .projects, footer div, .container, .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,6 +196,11 @@ h1, h2, .resume div, h3, .button {
 .desc h1 , .section2 h1 , .section3 h1, .experience h1, .projects h1{
   font-size: 80px;
   color: #0E141C;
+}
+
+.desc {
+  margin-left: 110px; 
+  width: 700px;
 }
 
 .underline {
@@ -239,6 +233,11 @@ h1, h2, .resume div, h3, .button {
   height: 300px;
   width: 300px;
   background-color: #607EA2;
+}
+
+.section2 img {
+  height: 350px;
+  width: 350px;
 }
 
 .section3 {
@@ -407,6 +406,22 @@ h1, h2, .resume div, h3, .button {
   align-items: center;
 } 
 
+/* for one of my projects it is wider so the sizing is different */
+.wide .carousel {
+  width: 1400px;
+  height: 680px;
+  margin-bottom: 40px;
+}
+
+.wide p {
+  width: 1350px;
+  height: 210px;
+}
+
+.wide .container {
+  width: 1350px;
+}
+
 .images {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -435,7 +450,7 @@ h1, h2, .resume div, h3, .button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .container {
@@ -480,8 +495,161 @@ footer .block {
 }
 
 .envelope {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   background-color: #D9D9D9;
   width: 700px;
   height: 400px;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .herosection {
+    height: 600px;
+  }
+
+  .logo a {
+    font-size: 40px;
+  }
+
+  nav ul li a {
+    display: none;
+  }
+
+  #herosection {
+    padding: 25px 0 10px 15px;
+    transition: background-color 0.8s ease-in-out;
+    transition: padding 0.8s ease;
+  }
+
+  #herosection.scrolled {
+    padding: 2px 0 0 15px;
+    background-color: #0E141C;
+    height: 63px;
+  }
+
+  .link.scrolled {
+    color: #D9D9D9;
+  }
+
+  .herosection .divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #0E141C;
+    height: 600px;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+
+  .herosection h1 {
+    width: 500px;
+    color: #8197AC;
+    text-align: center;
+    font-size: 75px;
+  }
+
+  .herosection h2 {
+    color: #607EA2;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .frame {
+    display: none;
+  }
+  
+  .herosection .block {
+    display: none;
+  }
+
+  .jelly {
+    position: absolute;
+    top: 330px;
+    left: -42px;
+    height: 420px;
+    width: 320px;
+    animation: swim 3s infinite ease-in-out;
+    transform-origin: center; 
+  }
+
+  @keyframes swim {
+    0%   { transform: rotate(-18deg); } /* at the start of the animation */
+    50%  { transform: rotate(-8deg); }
+    100% { transform: rotate(-18deg); } /* towards the end */
+  } 
+
+  .info {
+    margin: 0;
+    background-color: #314B6E;
+    color: #D9D9D9;
+    padding:  45px 20px 45px 285px;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding: 150px 53px 0 53px;
+  }
+
+  .about h1 {
+    margin: 0;
+    font-size: 50px;
+    width: 400px;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .section1 img {
+    margin-top: 30px;
+    width: 46vw;
+    height: 300px;
+    background-color: #192C44;
+    padding: 10px;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .desc {
+    margin: 0;
+  }
+
+  .underline {
+    height: 10px;
+    width: 75vw;
+    background-color: #607EA2;
+  }
+
+  .desc p {
+    width: 80vw;
+    font-size: 20px;
+  }
+
+  .section2 .block {
+    flex-direction: column;
+    background-color: #0E141C;
+    margin-top: 50px;
+    height: 1050px;
+    width: 400px;
+    gap: 30px;
+  }
 }
