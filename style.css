@@ -73,13 +73,13 @@ nav ul li .different {
 }
 
 #herosection {
-  padding: 25px 110px 10px 70px;
+  padding: 25px 100px 10px 70px;
   transition: background-color 0.8s ease-in-out;
   transition: padding 0.8s ease;
 }
 
 #herosection.scrolled {
-  padding: 2px 110px 0 70px;
+  padding: 2px 100px 0 70px;
   background-color: #0E141C;
   height: 63px;
 }
@@ -135,18 +135,18 @@ h1, h2, .resume div, h3, .button {
 }
 
 .frame {
-  width: 513px;
+  width: 480px;
   height: 550px;
   border: 8px solid #BDB3A3;
   margin-left: auto;
-  margin-right: 250px;
+  margin-right: 210px;
   margin-top: 110px;
 }
 
 .jelly {
   position: absolute;
   top: 120px;
-  right: 110px;
+  right: 60px;
   animation: swim 3s infinite ease-in-out;
   transform-origin: center; 
 }
@@ -173,9 +173,9 @@ h1, h2, .resume div, h3, .button {
   padding: 200px 53px 0 53px;
 }
 
-.about img, .back { 
+.about img { 
   height: 575px;
-  width: 430px;
+  width: 480px;
 }
 
 .section1 {
@@ -200,7 +200,7 @@ h1, h2, .resume div, h3, .button {
 
 .desc {
   margin-left: 110px; 
-  width: 700px;
+  width: 600px;
 }
 
 .underline {
@@ -211,13 +211,8 @@ h1, h2, .resume div, h3, .button {
 
 .desc p {
   margin-top: 30px;
-  font-size: 35px;
+  font-size: 30px;
   color: #314B6E;
-}
-
-.back {
-  position: absolute;
-  z-index: -1;
 }
 
 .section2 .block {
@@ -233,6 +228,11 @@ h1, h2, .resume div, h3, .button {
   height: 300px;
   width: 300px;
   background-color: #607EA2;
+  transition: all 0.5s ease;
+}
+
+.section2 .block div:hover {
+  transform: scale(1.1);
 }
 
 .section2 img {
@@ -286,7 +286,7 @@ h1, h2, .resume div, h3, .button {
 }
 
 .experience {
-  margin-left: 230px;
+  margin-left: 14vw;
   padding-top: 150px;
   padding-bottom: 130px;
 }
@@ -315,7 +315,7 @@ h1, h2, .resume div, h3, .button {
 .applied {
   display: flex;
   flex-direction: column;
-  margin-left: 160px;
+  margin-left: 3vw;
   margin-top: -150px;
   gap: 50px;
 }
@@ -408,18 +408,18 @@ h1, h2, .resume div, h3, .button {
 
 /* for one of my projects it is wider so the sizing is different */
 .wide .carousel {
-  width: 1400px;
-  height: 680px;
+  width: 1000px;
+  height: 480px;
   margin-bottom: 40px;
 }
 
 .wide p {
-  width: 1350px;
-  height: 210px;
+  width: 1000px;
+  height: 240px;
 }
 
 .wide .container {
-  width: 1350px;
+  width: 1000px;
 }
 
 .images {
@@ -500,8 +500,8 @@ footer .block {
   justify-content: center;
   align-items: center;
   background-color: #D9D9D9;
-  width: 700px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
   border-radius: 5px;
 }
 
@@ -607,10 +607,6 @@ footer .block {
     margin: 0;
     font-size: 50px;
     width: 400px;
-  }
-
-  .back {
-    display: none;
   }
 
   .section1 img {
